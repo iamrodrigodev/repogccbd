@@ -2,7 +2,6 @@ package com.example.demo.service;
 
 import java.util.List;
 
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.model.Libro;
@@ -18,7 +17,7 @@ public class LibroService {
     }
 
     public List<Libro> listarLibros() {
-        return repository.findAll(Sort.by("id"));
+        return repository.findAllByOrderByIdAsc();
     }
 
     public Libro registrarLibro(Libro libro) {
