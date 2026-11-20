@@ -4,7 +4,7 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import com.example.demo.entity.Producto;
+import com.example.demo.model.Producto;
 import com.example.demo.repository.ProductoRepository;
 
 @Service
